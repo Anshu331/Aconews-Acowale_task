@@ -1,0 +1,36 @@
+#about {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+
+.features {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: space-around;
+}
+
+.bottomline {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000000e0;
+    margin-bottom: 40px;
+}
+.thank-you {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #6b6407; /* Adjust color as needed */
+  }
+  
+  .thank-you-symbol {
+    font-size: 24px;
+    margin: 0 10px; /* Space between text and symbols */
+  }
+  

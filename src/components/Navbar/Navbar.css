@@ -1,0 +1,184 @@
+nav {
+    display: flex;
+    width: 100vw;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(4, 9, 34);
+    height: 80px;
+    border-bottom: 1px solid #452cb4e0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+nav.light {
+    background-color: rgb(61, 209, 209);
+}
+
+#ham {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-link.light {
+    color: rgb(53, 53, 61);
+}
+
+.nav-link.dark {
+    color: azure;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#logo {
+    font-size: 40px;
+    font-family: 'Orbit', sans-serif;
+    margin: 15px;
+    color: azure;
+    cursor: url(https://cdn.custom-cursor.com/db/8117/32/material-maki-pointer.png) 1 1, auto !important;
+}
+
+#logo.light {
+    color: black;
+}
+
+#search_container {
+    display: flex;
+    width: 40%;
+    border: 1px solid rgb(7, 196, 186);
+    border-radius: 50px; /* Full round */
+    overflow: hidden; /* Ensure it stays rounded */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow for depth */
+}
+
+#searchbox {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    border-radius: 50px 0 0 50px; /* Round the left side */
+    outline: none;
+}
+
+#searchbtn {
+    background-color: rgb(0, 0, 205);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 0 20px; /* Adjust padding to make it fit better */
+    border-radius: 0 50px 50px 0; /* Round the right side */
+}
+
+#searchbtn:hover {
+    background-color: rgb(1, 11, 43);
+    color: rgb(255, 255, 255);
+}
+
+
+#categories {
+    cursor: url(https://cdn.custom-cursor.com/db/8117/32/material-maki-pointer.png) 1 1, auto !important;
+    display: flex;
+    align-items: center;
+}
+
+#categories-arrow {
+    transition: all 0.5s ease-in-out;
+}
+
+#categories-arrow.up {
+    transform: rotate(180deg);
+}
+
+#dropdown-content {
+    position: absolute;
+    transition: height 0.5s ease-in-out;
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    justify-content: space-around;
+    background-color: rgb(32, 33, 36);
+}
+
+#dropdown-content.light {
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 27, 27);
+}
+
+#dropdown-content.drop {
+    height: 300px;
+}
+
+#dropdown-content a {
+    padding: 3px;
+}
+
+@media (max-width:900px) {
+
+    #ham {
+        display: block;
+        transition: all 0.5s ease-out;
+    }
+
+    #ham.expand {
+        transform: rotate(90deg);
+    }
+
+    nav {
+        flex-direction: column;
+        height: 100px;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+    }
+
+    nav ul {
+        width: 300px;
+    }
+
+    nav.expand {
+        height: 300px;
+    }
+
+    nav.no_over {
+        overflow: visible;
+    }
+
+    nav ul {
+        margin: 20px;
+    }
+
+    #search_container {
+        width: 300px;
+        margin-top: 20px;
+    }
+}
+
+.about-link.dark {
+    color: azure;
+}
+
+.about-link.light {
+    color: black;
+}
