@@ -23,9 +23,11 @@ ReactJS: JavaScript library for building user interfaces.
 React Router DOM: Library for routing in React applications.
 React Top Loading Bar: Library for displaying a loading bar during API requests.
 
-# To install the required dependencies, run:
+# To install the required dependencies, 
+run:
 npm install
-Customization
+
+#Customization
 To customize the AcoNews website, you can modify the CSS files located in the src/css directory. The styling is implemented using custom CSS to achieve the desired design. Adjust the CSS files as needed to match your preferences.
 
 # Contributing
